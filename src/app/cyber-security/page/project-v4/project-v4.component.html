@@ -1,0 +1,62 @@
+<div class="inner-banner-one z-1 position-relative gap-40 mt-120 lg-mt-100">
+    <div class="bg position-relative z-1 pt-120 xl-pt-100 lg-pt-80 pb-130 xl-pb-100 lg-pb-70">
+        <div class="container">
+            <h2>OUR PROJECTS</h2>
+            <ul class="style-none d-flex align-items-center">
+                <li><a routerLink="/cyber-security">Home</a></li>
+                <li>/</li>
+                <li>Projects</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="project-section-four mt-110 lg-mt-80">
+    <div class="container">
+        <div class="filter-nav-three">
+            <ul class="style-none d-flex justify-content-center flex-wrap isotop-menu-wrapper">
+                <li *ngFor="let filter of filters" (click)="setActiveFilter(filter.value)"
+                    [class.is-checked]="activeFilter === filter.value">
+                    {{ filter.label }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gap-40 mt-60 lg-mt-40">
+        <div id="isotop-gallery-wrapper" class="grid-3column">
+            <div class="grid-sizer"></div>
+            <div class="row">
+                <div *ngFor="let item of galleryItems" class="col-md-6 col-12" [class.d-none]="!isVisible(item.categories)"
+                    [ngClass]="item.categories.join(' ') + ' isotop-item mb-40 lg-mb-20'">
+                    <div class="project-block-four position-relative z-1">
+                        <img [src]="item.image" alt="" class="w-100 media-img tran3s" />
+                        <a href="javascript:void(0)" class="btn-round"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="block-feature-twentyEight mt-100 lg-mt-50">
+    <div class="container">
+        <div class="block-feature text-center border-2 border-bottom border-dark pb-130 lg-pb-60">
+            <div class="row align-items-center">
+                <div class="col-xxl-10 col-lg-9 m-auto">
+                    <div class="title-ten">
+                        <h2>Secure your small business, from anywhere.</h2>
+                    </div>
+
+                </div>
+                <div class="col-xl-6 m-auto">
+                    <p class="fs-24 mt-25 mb-35">Enjoy peace of mind knowing your business’s devices and customer data
+                        are more secure.</p>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="btn-nineteen">Learn More</a>
+        </div>
+        <!-- /.block-feature -->
+    </div>
+</div>

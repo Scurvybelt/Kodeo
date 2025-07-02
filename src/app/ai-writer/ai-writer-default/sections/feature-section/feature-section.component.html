@@ -1,0 +1,193 @@
+<!--
+		=====================================================
+			BLock Feature Four
+		=====================================================
+		-->
+<div class="block-feature-four pt-150 lg-pt-80">
+    <div class="container">
+        <div class="title-two text-center mb-100 xl-mb-70 lg-mb-50">
+            <h2>Piku Features</h2>
+        </div>
+        <div class="row gx-xl-5">
+            <div class="col-lg-6 d-flex mb-40 md-mb-20">
+                <div class="card-style-two tran3s w-100">
+                    <div class="wrapper tran3s d-flex flex-column h-100 position-relative">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-160 xl-mb-120 lg-mb-80 position-relative z-1">
+                            <h3 class="tran3s">Correct Verb</h3>
+                            <img src="assets/images/shape/shape_08.svg" alt="" class="shapes pointer">
+                            <div class="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/icon_07.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="font-manrope tran3s mt-auto">AI refines language, suggests, applies precise verbs for
+                            polished communication effortlessly.</p>
+                        <a href="javascript:void(0)" class="stretched-link"></a>
+                    </div>
+                </div>
+                <!-- /.card-style-two -->
+            </div>
+            <div class="col-lg-6 d-flex mb-40 md-mb-20">
+                <div class="card-style-two tran3s w-100">
+                    <div class="wrapper tran3s d-flex flex-column h-100 position-relative">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-160 xl-mb-120 lg-mb-80 position-relative z-1">
+                            <h3 class="tran3s">Team & Collaboration</h3>
+                            <div class="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/icon_07.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="font-manrope tran3s">Boost teamwork with intuitive tools, real-time chat, and shared
+                            project dashboards for efficiency.</p>
+                        <a href="javascript:void(0)" class="stretched-link"></a>
+                    </div>
+                </div>
+                <!-- /.card-style-two -->
+            </div>
+            <div class="col-lg-6 d-flex mb-40 md-mb-20">
+                <div class="card-style-two tran3s w-100">
+                    <div class="wrapper tran3s d-flex flex-column h-100 position-relative">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-160 xl-mb-120 lg-mb-80 position-relative z-1">
+                            <h3 class="tran3s">AI Assistant </h3>
+                            <div class="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/icon_07.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="font-manrope tran3s">Empower tasks with AI assistant, automate, optimize, and enhance
+                            productivity seamlessly."</p>
+                        <a href="javascript:void(0)" class="stretched-link"></a>
+                    </div>
+                </div>
+                <!-- /.card-style-two -->
+            </div>
+            <div class="col-lg-6 d-flex mb-40 md-mb-20">
+                <div class="card-style-two tran3s w-100">
+                    <div class="wrapper tran3s d-flex flex-column h-100 position-relative">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-160 xl-mb-120 lg-mb-80 position-relative z-1">
+                            <h3 class="tran3s">Blog & Article</h3>
+                            <img src="assets/images/shape/shape_09.svg" alt="" class="shapes pointer">
+                            <div class="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/icon_07.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="font-manrope tran3s">Revolutionize content creation, auto AI crafts engaging blogs and
+                            articles effortlessly.</p>
+                        <a href="javascript:void(0)" class="stretched-link"></a>
+                    </div>
+                </div>
+                <!-- /.card-style-two -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.block-feature-four -->
+
+
+
+<!--
+		=====================================================
+			BLock Feature Five
+		=====================================================
+		-->
+<div class="block-feature-five position-relative z-1 pt-150 lg-pt-80">
+    <img src="assets/images/shape/shape_10.svg" alt="" class="shapes shape_01">
+    <div class="container">
+        <div class="title-two text-center mb-100 xl-mb-70 lg-mb-50">
+            <h2>What Is PikuAi Capable Of?</h2>
+        </div>
+        <div class="feature-tab">
+            <nav class="filter-nav">
+                <div class="nav nav-tabs align-items-center justify-content-center border-0" role="tablist">
+                    <button *ngFor="let tab of tabs" class="nav-link" [class.active]="activeTab === tab.id"
+                        (click)="setActiveTab(tab.id)" type="button" role="tab" [attr.aria-controls]="tab.id"
+                        [attr.aria-selected]="activeTab === tab.id">
+                        <img [src]="tab.icon" alt="" class="shapes icon" />
+                        <img [src]="tab.icon_w" alt="" class="shapes icon icon_w" />
+                        {{ tab.label }}
+                    </button>
+                </div>
+            </nav>
+
+            <div class="mt-70 xl-mt-50">
+                <div class="tab-content">
+                    <div *ngFor="let tab of tabs" class="tab-pane" [class.show]="activeTab === tab.id"
+                        [class.active]="activeTab === tab.id" [id]="tab.id" role="tabpanel" tabindex="0">
+                        <img [src]="tab.image" alt="" class="w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.feature-tab -->
+    </div>
+</div>
+<!-- /.block-feature-five -->
+
+
+<!--
+		=====================================================
+			BLock Feature Six
+		=====================================================
+		-->
+<div class="block-feature-six position-relative z-2 pt-150 lg-pt-80">
+    <div class="container">
+        <div class="border-bottom mb-110 lg-mb-70 pb-60 lg-pb-30">
+            <div class="row align-items-end">
+                <div class="col-xl-7 col-lg-6">
+                    <div class="title-two text-center text-lg-start md-mb-30">
+                        <h2 class="m0">Genuine outcomes powered by AI.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 ms-auto text-center text-lg-end">
+                    <a href="javascript:void(0)" class="btn-four">More About Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-7 order-lg-last ms-auto">
+                <div class="ps-xxl-5">
+                    <blockquote>Piku excels as the top AI solution for B2B SaaS campaigns." <img
+                            src="assets/images/icon/icon_14.svg" alt="" class="shapes icon"></blockquote>
+                    <div class="media-block border-30 mt-70 lg-mt-30 d-flex align-items-end">
+                        <div class="name-card w-100 d-flex align-items-center justify-content-between">
+                            <div>
+                                <h6>Maria Gomez</h6>
+                                <span class="text-white">CEO & Founder, Piku inc</span>
+                            </div>
+                            <img src="assets/images/logo/logo_04.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 order-lg-first">
+                <div class="wrapper position-relative md-mt-40">
+                    <div class="card-style-three position-relative z-1 mb-40 md-mb-20">
+                        <img src="assets/images/logo/p_logo_09.png" alt="" class="logo">
+                        <div class="main-count fw-bold"><span [countUp]="1200"></span>+</div>
+                        <span class="fs-20">Faster Server Speed</span>
+                        <img src="assets/images/shape/shape_14.svg" alt="" class="shapes shape_01">
+                    </div>
+                    <!-- /.card-style-three -->
+                    <div class="card-style-three position-relative z-1 mb-40 md-mb-20">
+                        <img src="assets/images/logo/p_logo_10.png" alt="" class="logo">
+                        <div class="main-count fw-bold"><span [countUp]="3.2"></span>X</div>
+                        <span class="fs-20">Smooth Integration</span>
+                        <img src="assets/images/shape/shape_15.svg" alt="" class="shapes shape_01">
+                    </div>
+                    <!-- /.card-style-three -->
+                    <div class="card-style-three position-relative z-1">
+                        <img src="assets/images/logo/p_logo_11.png" alt="" class="logo">
+                        <div class="main-count fw-bold"><span [countUp]="800"></span>%</div>
+                        <span class="fs-20">Membership Sale</span>
+                        <img src="assets/images/shape/shape_16.svg" alt="" class="shapes shape_01">
+                    </div>
+                    <!-- /.card-style-three -->
+                    <img src="assets/images/shape/shape_13.svg" alt="" class="shapes bg-shape">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.block-feature-six -->

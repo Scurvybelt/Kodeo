@@ -1,0 +1,148 @@
+<div class="pricing-section-three position-relative z-1 mt-150 xl-mt-120 lg-mt-80">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7">
+                <div class="title-six text-center text-lg-start">
+                    <h2>Transparent pricing, Select plan</h2>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <nav class="pricing-nav-two d-flex justify-content-center mb-35 md-mb-10 md-mt-30">
+                        <div class="nav nav-tabs">
+                            <button class="nav-link" [ngClass]="{'active':selectedPrice === allPriceList.Monthly}" (click)="selectedPrice = allPriceList.Monthly">Monthly</button>
+                            <button class="nav-link" [ngClass]="{'active':selectedPrice === allPriceList.Yearly}" (click)="selectedPrice = allPriceList.Yearly">Yearly</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content mt-30 md-mt-10">
+            <div class="tab-pane" [ngClass]="{'show active':selectedPrice === allPriceList.Monthly}">
+                <div class="row gx-xxl-5">
+                    <div class="col-lg-4">
+                        <div class="pr-column">
+                            <div class="pr-header text-center">
+                                <div class="plan text-uppercase">Standard</div>
+                                <strong class="price fw-500 d-block">0</strong>
+                            </div>
+                            <!-- /.pr-header -->
+                            <ul class="style-none text-center">
+                                <li>1 Domain</li>
+                                <li>1 Year Premium Support</li>
+                                <li>3gb Hosting</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn-eight mt-50 mb-50">Get Started</a>
+                            <div class="illustration d-flex align-items-center justify-content-center">
+                                <img src="assets/images/assets/ils_20.png" alt="">
+                            </div>
+                        </div>
+                        <!-- /.pr-column -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pr-column">
+                            <div class="pr-header text-center">
+                                <div class="plan text-uppercase">Gold</div>
+                                <strong class="price fw-500 d-block"><sup>$</sup>7</strong>
+                            </div>
+                            <!-- /.pr-header -->
+                            <ul class="style-none text-center">
+                                <li>3 Domain</li>
+                                <li>1 Year Premium Support</li>
+                                <li>10gb Hosting</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn-eight mt-50 mb-50">Get Started</a>
+                            <div class="illustration d-flex align-items-center justify-content-center">
+                                <img src="assets/images/assets/ils_21.png" alt="">
+                            </div>
+                        </div>
+                        <!-- /.pr-column -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pr-column">
+                            <div class="pr-header text-center">
+                                <div class="plan text-uppercase">Diamond</div>
+                                <strong class="price fw-500 d-block"><sup>$</sup>9</strong>
+                            </div>
+                            <!-- /.pr-header -->
+                            <ul class="style-none text-center">
+                                <li>Unlimited Domain</li>
+                                <li>1 Year Premium Support</li>
+                                <li>Unlimited Hosting</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn-eight mt-50 mb-50">Get Started</a>
+                            <div class="illustration d-flex align-items-center justify-content-center">
+                                <img src="assets/images/assets/ils_22.png" alt="">
+                            </div>
+                        </div>
+                        <!-- /.pr-column -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" [ngClass]="{'show active':selectedPrice === allPriceList.Yearly}">
+                <div class="row gx-xxl-5">
+                    <div class="col-lg-4">
+                        <div class="pr-column">
+                            <div class="pr-header text-center">
+                                <div class="plan text-uppercase">Standard</div>
+                                <strong class="price fw-500 d-block">0</strong>
+                            </div>
+                            <!-- /.pr-header -->
+                            <ul class="style-none text-center">
+                                <li>1 Domain</li>
+                                <li>1 Year Premium Support</li>
+                                <li>3gb Hosting</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn-eight mt-50 mb-50">Get Started</a>
+                            <div class="illustration d-flex align-items-center justify-content-center">
+                                <img src="assets/images/assets/ils_20.png" alt="">
+                            </div>
+                        </div>
+                        <!-- /.pr-column -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pr-column">
+                            <div class="pr-header text-center">
+                                <div class="plan text-uppercase">Gold</div>
+                                <strong class="price fw-500 d-block"><sup>$</sup>27</strong>
+                            </div>
+                            <!-- /.pr-header -->
+                            <ul class="style-none text-center">
+                                <li>3 Domain</li>
+                                <li>1 Year Premium Support</li>
+                                <li>10gb Hosting</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn-eight mt-50 mb-50">Get Started</a>
+                            <div class="illustration d-flex align-items-center justify-content-center">
+                                <img src="assets/images/assets/ils_21.png" alt="">
+                            </div>
+                        </div>
+                        <!-- /.pr-column -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pr-column">
+                            <div class="pr-header text-center">
+                                <div class="plan text-uppercase">Diamond</div>
+                                <strong class="price fw-500 d-block"><sup>$</sup>39</strong>
+                            </div>
+                            <!-- /.pr-header -->
+                            <ul class="style-none text-center">
+                                <li>Unlimited Domain</li>
+                                <li>1 Year Premium Support</li>
+                                <li>Unlimited Hosting</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn-eight mt-50 mb-50">Get Started</a>
+                            <div class="illustration d-flex align-items-center justify-content-center">
+                                <img src="assets/images/assets/ils_22.png" alt="">
+                            </div>
+                        </div>
+                        <!-- /.pr-column -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.tab-content -->
+    </div>
+
+</div>
